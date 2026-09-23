@@ -1,1 +1,679 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulatore Quiz Farmacologia - eCampus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .lesson-section {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+        .lesson-title {
+            color: #2980b9;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #e1e1e1;
+        }
+        .question p {
+            font-weight: bold;
+            margin-top: 0;
+        }
+        label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        label:hover {
+            background-color: #f0f0f0;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .correct-answer {
+            background-color: #d4edda !important;
+            color: #155724;
+            font-weight: bold;
+            border: 1px solid #c3e6cb;
+        }
+        .wrong-answer {
+            background-color: #f8d7da !important;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <h1>Simulatore Quiz Farmacologia</h1>
+
+    <form id="quizForm">
+
+        <!-- LEZIONE 002 -->
+        <div class="lesson-section">
+            <h2 class="lesson-title">Lezione 002</h2>
+            
+            <div class="question">
+                <p>01. Per recettore si intende:</p>
+                <label><input type="radio" name="l02_q1" value="0"> qualunque proteina cellulare</label>
+                <label><input type="radio" name="l02_q1" value="0"> qualunque sostanza endogena</label>
+                <label><input type="radio" name="l02_q1" value="1"> una proteina con i cui elementi strutturali il farmaco interagisce per generare l'effetto biologico</label>
+                <label><input type="radio" name="l02_q1" value="0"> qualunque molecola che si trovi sulla membrana cellulare</label>
+            </div>
+
+            <div class="question">
+                <p>02. Per placebo si intende:</p>
+                <label><input type="radio" name="l02_q2" value="0"> una sostanza che piace</label>
+                <label><input type="radio" name="l02_q2" value="0"> una sostanza che modula l'attività del farmaco</label>
+                <label><input type="radio" name="l02_q2" value="1"> una sostanza priva di attività farmacologica intrinseca, utile alla studio dei farmaci</label>
+                <label><input type="radio" name="l02_q2" value="0"> nessuna delle affermazioni è corretta</label>
+            </div>
+
+            <div class="question">
+                <p>03. Lo studio dei fattori che determinano le variazioni della concentrazione plasmatica di un farmaco nel tempo è definito:</p>
+                <label><input type="radio" name="l02_q3" value="0"> farmacologia</label>
+                <label><input type="radio" name="l02_q3" value="0"> farmacodinamica</label>
+                <label><input type="radio" name="l02_q3" value="1"> farmacocinetica</label>
+                <label><input type="radio" name="l02_q3" value="0"> farmacogenetica</label>
+            </div>
+
+            <div class="question">
+                <p>04. La fase farmacodinamica di un farmaco corrisponde a:</p>
+                <label><input type="radio" name="l02_q4" value="1"> interazione con il sito di azione</label>
+                <label><input type="radio" name="l02_q4" value="0"> distribuzione</label>
+                <label><input type="radio" name="l02_q4" value="0"> metabolizzazione</label>
+                <label><input type="radio" name="l02_q4" value="0"> eliminazione</label>
+            </div>
+
+            <div class="question">
+                <p>05. La finestra terapeutica:</p>
+                <label><input type="radio" name="l02_q5" value="1"> intervallo fra la concentrazione minima al di sotto della quale il farmaco è clinicamente inefficace e la concentrazione massima al di sopra della quale compaiono effetti tossici</label>
+                <label><input type="radio" name="l02_q5" value="0"> la finestra temporale entro cui va assunto il farmaco</label>
+                <label><input type="radio" name="l02_q5" value="0"> la dose minima efficace</label>
+                <label><input type="radio" name="l02_q5" value="0"> la durata della terapia</label>
+            </div>
+
+            <div class="question">
+                <p>06. La risposta ai farmaci nella popolazione:</p>
+                <label><input type="radio" name="l02_q6" value="0"> tutti i soggetti rispondono allo stesso modo allo stesso farmaco</label>
+                <label><input type="radio" name="l02_q6" value="0"> dipende dalla via di somministrazione del farmaco utilizzata</label>
+                <label><input type="radio" name="l02_q6" value="0"> dipende solo dal sesso del soggetto</label>
+                <label><input type="radio" name="l02_q6" value="1"> differisce da soggetto a soggetto</label>
+            </div>
+
+            <div class="question">
+                <p>07. Quale delle seguenti corrisponde maggiormente alla definizione di farmacocinetica?</p>
+                <label><input type="radio" name="l02_q7" value="1"> Nessuna di quelle elencate</label>
+                <label><input type="radio" name="l02_q7" value="0"> La velocità con cui ha inizio l'azione del farmaco</label>
+                <label><input type="radio" name="l02_q7" value="0"> Le conseguenze biologiche dell'interazione tra farmaco e recettore</label>
+                <label><input type="radio" name="l02_q7" value="0"> La velocità con cui viene raggiunto l'equilibrio nella reazione tra farmaco e recettore</label>
+            </div>
+
+            <div class="question">
+                <p>08. Lo studio dei fattori che determinano le variazioni delle concentrazioni plasmatiche di un farmaco nel tempo è definito:</p>
+                <label><input type="radio" name="l02_q8" value="0"> Farmacogenomica</label>
+                <label><input type="radio" name="l02_q8" value="0"> Farmacologia</label>
+                <label><input type="radio" name="l02_q8" value="0"> Farmacodinamica</label>
+                <label><input type="radio" name="l02_q8" value="1"> Farmacocinetica</label>
+            </div>
+
+            <div class="question">
+                <p>09. La farmacocinetica comprende tutte le seguenti fasi, tranne:</p>
+                <label><input type="radio" name="l02_q9" value="0"> Distribuzione</label>
+                <label><input type="radio" name="l02_q9" value="1"> Interazione farmaco-recettore</label>
+                <label><input type="radio" name="l02_q9" value="0"> Metabolismo</label>
+                <label><input type="radio" name="l02_q9" value="0"> Assorbimento</label>
+            </div>
+        </div>
+
+        <!-- LEZIONE 003 -->
+        <div class="lesson-section">
+            <h2 class="lesson-title">Lezione 003</h2>
+            
+            <div class="question">
+                <p>01. Quali tra i seguenti possono essere i rischi della somministrazione di un farmaco per via endovenosa?</p>
+                <label><input type="radio" name="l03_q1" value="0"> il farmaco iniettato non è più recuperabile</label>
+                <label><input type="radio" name="l03_q1" value="0"> danni d'organo</label>
+                <label><input type="radio" name="l03_q1" value="0"> fenomeni di embolismo</label>
+                <label><input type="radio" name="l03_q1" value="1"> tutte le risposte sono corrette</label>
+            </div>
+
+            <div class="question">
+                <p>02. La via inalatoria:</p>
+                <label><input type="radio" name="l03_q2" value="0"> è caratterizzata da marcati effetti collaterali sistemici</label>
+                <label><input type="radio" name="l03_q2" value="0"> non necessita della compliance del paziente</label>
+                <label><input type="radio" name="l03_q2" value="1"> nessuna risposta è corretta</label>
+                <label><input type="radio" name="l03_q2" value="0"> no ha effetti sistemici</label>
+            </div>
+
+            <div class="question">
+                <p>03. La via rettale è caratterizzata da:</p>
+                <label><input type="radio" name="l03_q3" value="0"> un rapido assorbimento</label>
+                <label><input type="radio" name="l03_q3" value="0"> una rapida insorgenza dell'effetto</label>
+                <label><input type="radio" name="l03_q3" value="0"> un assorbimento ottimale</label>
+                <label><input type="radio" name="l03_q3" value="1"> assorbimento incompleto e da latenza dell'insorgenza dell'effetto</label>
+            </div>
+
+            <div class="question">
+                <p>04. Quale delle seguenti vie di somministrazione presenta i rischi maggiori in caso di sovradosaggio?</p>
+                <label><input type="radio" name="l03_q4" value="0"> transdermica</label>
+                <label><input type="radio" name="l03_q4" value="1"> endovenosa</label>
+                <label><input type="radio" name="l03_q4" value="0"> tutte presentano rischi comparabili</label>
+                <label><input type="radio" name="l03_q4" value="0"> orale</label>
+            </div>
+
+            <div class="question">
+                <p>05. Quali tra i seguenti sono i principali siti di iniezioni intramuscolari di farmaci?</p>
+                <label><input type="radio" name="l03_q5" value="0"> tutte le precedenti</label>
+                <label><input type="radio" name="l03_q5" value="0"> trapezio e grande pettorale</label>
+                <label><input type="radio" name="l03_q5" value="1"> gluteo e deltoide</label>
+                <label><input type="radio" name="l03_q5" value="0"> quadricipite e tricipite</label>
+            </div>
+
+            <div class="question">
+                <p>06. La via rettale si utilizza:</p>
+                <label><input type="radio" name="l03_q6" value="0"> per avere effetti solo sistemici</label>
+                <label><input type="radio" name="l03_q6" value="0"> solo nei bambini</label>
+                <label><input type="radio" name="l03_q6" value="1"> per avere effetti sia sistemici sia locali</label>
+                <label><input type="radio" name="l03_q6" value="0"> per avere effetti solo a livello locale</label>
+            </div>
+
+            <div class="question">
+                <p>07. Le vie di somministrazione dei farmaci:</p>
+                <label><input type="radio" name="l03_q7" value="0"> nessuna delle precedenti</label>
+                <label><input type="radio" name="l03_q7" value="0"> possono influenzare l'interazione farmaco-recettore</label>
+                <label><input type="radio" name="l03_q7" value="0"> possono influenzare la formulazione farmaceutica</label>
+                <label><input type="radio" name="l03_q7" value="1"> possono influenzare l'assorbimento del farmaco</label>
+            </div>
+
+            <div class="question">
+                <p>08. Le vie di somministrazione si suddividono in:</p>
+                <label><input type="radio" name="l03_q8" value="0"> enterali e gastroenteriche</label>
+                <label><input type="radio" name="l03_q8" value="0"> parenterali e per iniezione</label>
+                <label><input type="radio" name="l03_q8" value="1"> enterali e parenterali</label>
+                <label><input type="radio" name="l03_q8" value="0"> topiche e parenterali</label>
+            </div>
+
+            <div class="question">
+                <p>09. La via inalatoria:</p>
+                <label><input type="radio" name="l03_q9" value="0"> nessuna risposta è corretta</label>
+                <label><input type="radio" name="l03_q9" value="0"> è caratterizzata da assorbimento rapido</label>
+                <label><input type="radio" name="l03_q9" value="0"> è ideale per i gas</label>
+                <label><input type="radio" name="l03_q9" value="1"> Può dare effetti sistemici</label>
+            </div>
+
+            <div class="question">
+                <p>10. La via rettale si utilizza:</p>
+                <label><input type="radio" name="l03_q10" value="0"> Unicamente negli adulti</label>
+                <label><input type="radio" name="l03_q10" value="1"> In caso di pazienti non collaborativi o in presenza di vomito</label>
+                <label><input type="radio" name="l03_q10" value="0"> Nessuna delle precedenti</label>
+                <label><input type="radio" name="l03_q10" value="0"> Unicamente nei bambini</label>
+            </div>
+
+            <div class="question">
+                <p>11. La via trasdermica:</p>
+                <label><input type="radio" name="l03_q11" value="0"> è caratterizzata da assorbimento rapido</label>
+                <label><input type="radio" name="l03_q11" value="1"> è caratterizzata da assorbimento lento e prolungato</label>
+                <label><input type="radio" name="l03_q11" value="0"> causa metabolismo di primo passaggio</label>
+                <label><input type="radio" name="l03_q11" value="0"> è adatta per sostanze idrofile</label>
+            </div>
+
+            <div class="question">
+                <p>12. I farmaci possono essere somministrati attraverso molteplici vie. Quale di quelle indicate presenta i maggiori inconvenienti nelle terapie con farmaci di natura peptidica?</p>
+                <label><input type="radio" name="l03_q12" value="0"> endovena</label>
+                <label><input type="radio" name="l03_q12" value="0"> nasale</label>
+                <label><input type="radio" name="l03_q12" value="1"> orale</label>
+                <label><input type="radio" name="l03_q12" value="0"> rettale</label>
+            </div>
+
+            <div class="question">
+                <p>13. Con quale delle seguenti vie di somministrazione si ha il metabolismo di primo passaggio?</p>
+                <label><input type="radio" name="l03_q13" value="0"> transdermica</label>
+                <label><input type="radio" name="l03_q13" value="0"> endovenosa</label>
+                <label><input type="radio" name="l03_q13" value="0"> aereosol</label>
+                <label><input type="radio" name="l03_q13" value="1"> orale</label>
+            </div>
+
+            <div class="question">
+                <p>14. L'effetto metabolico di primo passaggio si esplica principalmente dopo somministrazione per via:</p>
+                <label><input type="radio" name="l03_q14" value="1"> orale</label>
+                <label><input type="radio" name="l03_q14" value="0"> rettale</label>
+                <label><input type="radio" name="l03_q14" value="0"> non dipende dalla via di somministrazione</label>
+                <label><input type="radio" name="l03_q14" value="0"> sublinguale</label>
+            </div>
+
+            <div class="question">
+                <p>15. La via di somministrazione endovenosa è:</p>
+                <label><input type="radio" name="l03_q15" value="1"> adatta per sostanze irritanti</label>
+                <label><input type="radio" name="l03_q15" value="0"> adatta per piccoli volumi di farmaco</label>
+                <label><input type="radio" name="l03_q15" value="0"> la più adatta per avere effetti locali</label>
+                <label><input type="radio" name="l03_q15" value="0"> la via più sicura, economica e comune</label>
+            </div>
+
+            <div class="question">
+                <p>16. La via di somministrazione endovenosa è:</p>
+                <label><input type="radio" name="l03_q16" value="0"> caratterizzata da scarso assorbimento</label>
+                <label><input type="radio" name="l03_q16" value="0"> la più sicura, più comune ed economica</label>
+                <label><input type="radio" name="l03_q16" value="0"> utilizzabile solo nell'adulto</label>
+                <label><input type="radio" name="l03_q16" value="1"> la più adatta in caso di emergenza</label>
+            </div>
+
+            <div class="question">
+                <p>17. La via orale:</p>
+                <label><input type="radio" name="l03_q17" value="0"> l'assorbimento per questa via può essere influenzato dal cibo</label>
+                <label><input type="radio" name="l03_q17" value="0"> è la via di somministrazione più sicura, comoda e comune</label>
+                <label><input type="radio" name="l03_q17" value="1"> tutte le risposte sono corrette</label>
+                <label><input type="radio" name="l03_q17" value="0"> necessita della compliance del paziente</label>
+            </div>
+
+            <div class="question">
+                <p>18. La via orale (2):</p>
+                <label><input type="radio" name="l03_q18" value="0"> bypassa l'effetto di primo passaggio</label>
+                <label><input type="radio" name="l03_q18" value="1"> nessuna risposta è corretta</label>
+                <label><input type="radio" name="l03_q18" value="0"> ideale in caso di emergenza</label>
+                <label><input type="radio" name="l03_q18" value="0"> è adatta per sostanze irritanti</label>
+            </div>
+        </div>
+
+        <!-- LEZIONE 004 -->
+        <div class="lesson-section">
+            <h2 class="lesson-title">Lezione 004</h2>
+            
+            <div class="question">
+                <p>01. Due formulazioni di un farmaco sono bioequivalenti se:</p>
+                <label><input type="radio" name="l04_q1" value="0"> Hanno la stessa emivita</label>
+                <label><input type="radio" name="l04_q1" value="0"> Hanno lo stesso meccanismo d'azione</label>
+                <label><input type="radio" name="l04_q1" value="1"> Nessuna delle affermazioni è corretta</label>
+                <label><input type="radio" name="l04_q1" value="0"> Hanno la stessa clearance</label>
+            </div>
+
+            <div class="question">
+                <p>02. I parametri AUC, Cmax e Tmax consentono di definire:</p>
+                <label><input type="radio" name="l04_q2" value="0"> L'emivita di un farmaco</label>
+                <label><input type="radio" name="l04_q2" value="1"> La biodisponibilità relativa</label>
+                <label><input type="radio" name="l04_q2" value="0"> La durata dell'effetto di un farmaco somministrato per via endovenosa</label>
+                <label><input type="radio" name="l04_q2" value="0"> La clearance di un farmaco</label>
+            </div>
+
+            <div class="question">
+                <p>03. Due farmaci sono bioequivalenti se:</p>
+                <label><input type="radio" name="l04_q3" value="0"> Sono biotecnologici</label>
+                <label><input type="radio" name="l04_q3" value="1"> Non mostrano differenze nei parametri di AUC, Tmax e Cmax</label>
+                <label><input type="radio" name="l04_q3" value="0"> Hanno la stessa emivita (t1/2)</label>
+                <label><input type="radio" name="l04_q3" value="0"> Hanno lo stesso meccanismo d'azione</label>
+            </div>
+
+            <div class="question">
+                <p>04. Lo stomaco:</p>
+                <label><input type="radio" name="l04_q4" value="0"> non gioca nessun ruolo nei processi di assorbimento</label>
+                <label><input type="radio" name="l04_q4" value="0"> nessuna delle affermazioni è corretta</label>
+                <label><input type="radio" name="l04_q4" value="0"> è importante nei processi di metabolismo dei farmaci</label>
+                <label><input type="radio" name="l04_q4" value="1"> può funzionare da deposito dei farmaci</label>
+            </div>
+
+            <div class="question">
+                <p>05. Quali tra i seguenti meccanismi consentono il passaggio di un farmaco attraverso le membrane biologiche:</p>
+                <label><input type="radio" name="l04_q5" value="1"> tutte le risposte sono corrette</label>
+                <label><input type="radio" name="l04_q5" value="0"> Endocitosi</label>
+                <label><input type="radio" name="l04_q5" value="0"> Diffusione semplice</label>
+                <label><input type="radio" name="l04_q5" value="0"> Trasporto attivo</label>
+            </div>
+
+            <div class="question">
+                <p>06. Quali tra i seguenti fattori può influenzare l'assorbimento di un farmaco:</p>
+                <label><input type="radio" name="l04_q6" value="0"> Via di somministrazione</label>
+                <label><input type="radio" name="l04_q6" value="0"> Coefficiente di ripartizione</label>
+                <label><input type="radio" name="l04_q6" value="0"> Formulazione</label>
+                <label><input type="radio" name="l04_q6" value="1"> Tutte le risposte sono corrette</label>
+            </div>
+
+            <div class="question">
+                <p>07. Per assorbimento del farmaco si intende:</p>
+                <label><input type="radio" name="l04_q7" value="0"> Il passaggio del farmaco nel glomerulo renale</label>
+                <label><input type="radio" name="l04_q7" value="1"> Il passaggio del farmaco dal sito di somministrazione alla circolazione sistemica attraverso le membrane biologiche</label>
+                <label><input type="radio" name="l04_q7" value="0"> Il passaggio del farmaco dal sito di somministrazione al rene</label>
+                <label><input type="radio" name="l04_q7" value="0"> Nessuna delle precedenti</label>
+            </div>
+
+            <div class="question">
+                <p>08. I fattori che possono influenzare la diffusione semplice di un farmaco attraverso le membrane biologiche sono:</p>
+                <label><input type="radio" name="l04_q8" value="0"> Il coefficiente di ripartizione lipidi/acqua</label>
+                <label><input type="radio" name="l04_q8" value="0"> Lo spessore della membrana</label>
+                <label><input type="radio" name="l04_q8" value="0"> L'area della superficie</label>
+                <label><input type="radio" name="l04_q8" value="1"> Tutte le risposte sono corrette</label>
+            </div>
+
+            <div class="question">
+                <p>09. Quale dei seguenti parametri permette di valutare, dopo singola somministrazione, la biodisponibilità relativa di un farmaco somministrato per os?</p>
+                <label><input type="radio" name="l04_q9" value="0"> Cmax</label>
+                <label><input type="radio" name="l04_q9" value="1"> AUC</label>
+                <label><input type="radio" name="l04_q9" value="0"> Tmax</label>
+                <label><input type="radio" name="l04_q9" value="0"> Tutti quelli indicati</label>
+            </div>
+
+            <div class="question">
+                <p>10. La diffusione semplice di un farmaco attraverso le membrane biologiche:</p>
+                <label><input type="radio" name="l04_q10" value="0"> Avviene contro gradiente di concentrazione</label>
+                <label><input type="radio" name="l04_q10" value="0"> È saturabile</label>
+                <label><input type="radio" name="l04_q10" value="1"> Avviene secondo gradiente di concentrazione</label>
+                <label><input type="radio" name="l04_q10" value="0"> Nessuna delle precedenti</label>
+            </div>
+
+            <div class="question">
+                <p>11. Il trasporto attivo di farmaci attraverso la membrana:</p>
+                <label><input type="radio" name="l04_q11" value="1"> Tutte le affermazioni sono esatte</label>
+                <label><input type="radio" name="l04_q11" value="0"> Può essere inibito</label>
+                <label><input type="radio" name="l04_q11" value="0"> Richiede energia</label>
+                <label><input type="radio" name="l04_q11" value="0"> È saturabile</label>
+            </div>
+
+            <div class="question">
+                <p>12. L'assorbimento di farmaci per diffusione facilitata:</p>
+                <label><input type="radio" name="l04_q12" value="0"> Comporta consumo di energia</label>
+                <label><input type="radio" name="l04_q12" value="0"> Nessuna delle affermazioni è corretta</label>
+                <label><input type="radio" name="l04_q12" value="0"> Avviene contro gradiente di concentrazione</label>
+                <label><input type="radio" name="l04_q12" value="1"> È mediato da carrier</label>
+            </div>
+
+            <div class="question">
+                <p>13. Lo stato di ionizzazione di un farmaco:</p>
+                <label><input type="radio" name="l04_q13" value="0"> Non dipende dal pH</label>
+                <label><input type="radio" name="l04_q13" value="0"> Influenza la scelta della via di somministrazione</label>
+                <label><input type="radio" name="l04_q13" value="0"> Non ha effetti sull'assorbimento</label>
+                <label><input type="radio" name="l04_q13" value="1"> Influenza la sua capacità di attraversare le membrane</label>
+            </div>
+
+            <div class="question">
+                <p>14. Il pka di un farmaco:</p>
+                <label><input type="radio" name="l04_q14" value="0"> Rappresenta il valore di pH a cui il 90% del farmaco è in forma ionizzata</label>
+                <label><input type="radio" name="l04_q14" value="0"> Rappresenta il valore di pH a cui il 20% del farmaco è in forma ionizzata</label>
+                <label><input type="radio" name="l04_q14" value="0"> Rappresenta il valore di pH a cui il 100% farmaco è in forma ionizzata</label>
+                <label><input type="radio" name="l04_q14" value="1"> Rappresenta il valore di pH a cui il 50% del farmaco è in forma ionizzata</label>
+            </div>
+        </div>
+
+        <!-- LEZIONE 006 -->
+        <div class="lesson-section">
+            <h2 class="lesson-title">Lezione 006</h2>
+            
+            <div class="question">
+                <p>01. Quali tessuti possono costituire siti di deposito per i farmaci?</p>
+                <label><input type="radio" name="l06_q1" value="0"> Osso e fegato</label>
+                <label><input type="radio" name="l06_q1" value="0"> Fegato e reni</label>
+                <label><input type="radio" name="l06_q1" value="0"> Polmoni e tessuto adiposo</label>
+                <label><input type="radio" name="l06_q1" value="1"> Tessuto adiposo e osso</label>
+            </div>
+
+            <div class="question">
+                <p>02. Il volume apparente di distribuzione è uguale a quello del sangue quando:</p>
+                <label><input type="radio" name="l06_q2" value="0"> sempre.</label>
+                <label><input type="radio" name="l06_q2" value="1"> il farmaco non si lega a nessun tessuto.</label>
+                <label><input type="radio" name="l06_q2" value="0"> il farmaco si deposita in tutti i tessuti in maniera simile.</label>
+                <label><input type="radio" name="l06_q2" value="0"> non accade mai</label>
+            </div>
+
+            <div class="question">
+                <p>03. I principali fattori che determinano la distribuzione di un farmaco nell'organismo sono:</p>
+                <label><input type="radio" name="l06_q3" value="0"> Perfusione dell'organo</label>
+                <label><input type="radio" name="l06_q3" value="0"> Interazione con le proteine plasmatiche</label>
+                <label><input type="radio" name="l06_q3" value="0"> Caratteristiche chimico-fisiche della molecola</label>
+                <label><input type="radio" name="l06_q3" value="1"> Tutte le risposte sono corrette</label>
+            </div>
+
+            <div class="question">
+                <p>04. La distribuzione di un farmaco è influenzata da tutti i seguenti fattori tranne:</p>
+                <label><input type="radio" name="l06_q4" value="0"> La lipofilia</label>
+                <label><input type="radio" name="l06_q4" value="0"> Il legame con le proteine plasmatiche</label>
+                <label><input type="radio" name="l06_q4" value="0"> Il peso molecolare</label>
+                <label><input type="radio" name="l06_q4" value="1"> Il meccanismo d'azione</label>
+            </div>
+
+            <div class="question">
+                <p>05. Gli organi a maggior perfusione sono:</p>
+                <label><input type="radio" name="l06_q5" value="0"> Cervello, polmoni, muscoli e fegato</label>
+                <label><input type="radio" name="l06_q5" value="1"> Cuore, fegato, reni e cervello</label>
+                <label><input type="radio" name="l06_q5" value="0"> Muscoli, cuore, fegato e cervello</label>
+                <label><input type="radio" name="l06_q5" value="0"> Cuore, muscoli, pancreas e polmoni</label>
+            </div>
+
+            <div class="question">
+                <p>06. In vivo, il legame farmaco-proteina è principalmente correlato al legame del farmaco con:</p>
+                <label><input type="radio" name="l06_q6" value="0"> Le globuline</label>
+                <label><input type="radio" name="l06_q6" value="0"> Le lipoproteine</label>
+                <label><input type="radio" name="l06_q6" value="0"> La cheratina</label>
+                <label><input type="radio" name="l06_q6" value="1"> L'albumina</label>
+            </div>
+
+            <div class="question">
+                <p>07. L'interazione farmaco-proteine plasmatiche è un legame:</p>
+                <label><input type="radio" name="l06_q7" value="0"> Irreversibile, specifico e a bassa energia</label>
+                <label><input type="radio" name="l06_q7" value="1"> Reversibile, aspecifico e a bassa energia</label>
+                <label><input type="radio" name="l06_q7" value="0"> Reversibile, specifico e a elevata energia</label>
+                <label><input type="radio" name="l06_q7" value="0"> Irreversibile, aspecifico e a elevata energia</label>
+            </div>
+
+            <div class="question">
+                <p>08. Nel legame alle proteine plasmatiche:</p>
+                <label><input type="radio" name="l06_q8" value="1"> La quota libera di farmaco è responsabile dell'azione farmacologica e degli effetti tossici, mentre la frazione legata rappresenta una sorta di deposito</label>
+                <label><input type="radio" name="l06_q8" value="0"> La quota libera e quella legata hanno gli stessi effetti</label>
+                <label><input type="radio" name="l06_q8" value="0"> La quota legata è responsabile degli effetti farmacologici, mentre la frazione libera degli effetti tossici</label>
+                <label><input type="radio" name="l06_q8" value="0"> Nessuna delle risposte è corretta</label>
+            </div>
+
+            <div class="question">
+                <p>09. Se due farmaci A e B competono per il legame all'albumina:</p>
+                <label><input type="radio" name="l06_q9" value="1"> la somministrazione del farmaco B può ridurre il legame del farmaco A e portare ad un aumento transitorio della concentrazione di farmaco A libero per spiazzamento, con rischio di effetti tossici</label>
+                <label><input type="radio" name="l06_q9" value="0"> la somministrazione del farmaco B può ridurre il legame del farmaco A e portare ad un riduzione transitoria della concentrazione totale di farmaco A</label>
+                <label><input type="radio" name="l06_q9" value="0"> Nessuna delle risposte è corretta</label>
+                <label><input type="radio" name="l06_q9" value="0"> la somministrazione del farmaco B può aumentare il legame del farmaco A e portare ad una riduzione transitoria della concentrazione di farmaco A</label>
+            </div>
+        </div>
+
+        <!-- LEZIONE 007 -->
+        <div class="lesson-section">
+            <h2 class="lesson-title">Lezione 007</h2>
+            
+            <div class="question">
+                <p>01. L'aspirina subisce:</p>
+                <label><input type="radio" name="l07_q1" value="0"> Solo una idrolisi nella fase II</label>
+                <label><input type="radio" name="l07_q1" value="0"> Solo un'idrolisi nella fase I</label>
+                <label><input type="radio" name="l07_q1" value="1"> Una reazione di idrolisi nella fase I e una reazione di coniugazione con un glucoronide nella fase II</label>
+                <label><input type="radio" name="l07_q1" value="0"> La coniugazione con glucoronide nella fase I e un'idrolisi nella fase II</label>
+            </div>
+
+            <div class="question">
+                <p>02. Le reazioni di biotrasformazione epatica di un farmaco possono essere di:</p>
+                <label><input type="radio" name="l07_q2" value="1"> Fase I e II</label>
+                <label><input type="radio" name="l07_q2" value="0"> Ossidazione</label>
+                <label><input type="radio" name="l07_q2" value="0"> Riduzione</label>
+                <label><input type="radio" name="l07_q2" value="0"> Dealchilazione</label>
+            </div>
+
+            <div class="question">
+                <p>03. Quale citocromo è coinvolto nei meccanismi di biotrasformazione di un farmaco?</p>
+                <label><input type="radio" name="l07_q3" value="0"> Citocromo P540</label>
+                <label><input type="radio" name="l07_q3" value="0"> Citocromo P25</label>
+                <label><input type="radio" name="l07_q3" value="0"> Citocromo B150</label>
+                <label><input type="radio" name="l07_q3" value="1"> Citocromo P450</label>
+            </div>
+
+            <div class="question">
+                <p>04. Quale reazione di Fase II è la principale responsabile delle reazioni di detossificazione dei composti reattivi formatisi nelle reazioni di Fase I?</p>
+                <label><input type="radio" name="l07_q4" value="0"> Coniugazione con amminoacidi</label>
+                <label><input type="radio" name="l07_q4" value="0"> Acetilazione</label>
+                <label><input type="radio" name="l07_q4" value="1"> Coniugazione con glutatione</label>
+                <label><input type="radio" name="l07_q4" value="0"> Solfatazione</label>
+            </div>
+
+            <div class="question">
+                <p>05. La maggior parte delle reazioni metaboliche di Fase I è operata da:</p>
+                <label><input type="radio" name="l07_q5" value="0"> Nessuna delle risposte è corretta</label>
+                <label><input type="radio" name="l07_q5" value="0"> Perossidasi</label>
+                <label><input type="radio" name="l07_q5" value="1"> Enzimi microsomiali epatici (CYP450)</label>
+                <label><input type="radio" name="l07_q5" value="0"> Monoamminossidasi</label>
+            </div>
+
+            <div class="question">
+                <p>06. Il fumo di sigaretta:</p>
+                <label><input type="radio" name="l07_q6" value="1"> È un induttore del CYP450</label>
+                <label><input type="radio" name="l07_q6" value="0"> Modifica il solo metabolismo di farmaci somministrati per aerosol</label>
+                <label><input type="radio" name="l07_q6" value="0"> Non influisce sul metabolismo degli xenobiotici</label>
+                <label><input type="radio" name="l07_q6" value="0"> È un inibitore del CYP450</label>
+            </div>
+
+            <div class="question">
+                <p>07. Tra le seguenti bevande, quale è nota per i suoi effetti sul metabolismo di xenobiotici?</p>
+                <label><input type="radio" name="l07_q7" value="1"> Succo di pompelmo</label>
+                <label><input type="radio" name="l07_q7" value="0"> Succo di mela</label>
+                <label><input type="radio" name="l07_q7" value="0"> Succo di limone</label>
+                <label><input type="radio" name="l07_q7" value="0"> Succo di arancia</label>
+            </div>
+        </div>
+
+        <!-- LEZIONE 008 -->
+        <div class="lesson-section">
+            <h2 class="lesson-title">Lezione 008</h2>
+            
+            <div class="question">
+                <p>01. Il volume di sangue o plasma dal quale il farmaco viene eliminato nell'unità di tempo:</p>
+                <label><input type="radio" name="l08_q1" value="1"> corrisponde alla clearance del farmaco</label>
+                <label><input type="radio" name="l08_q1" value="0"> definisce il volume di distribuzione del farmaco</label>
+                <label><input type="radio" name="l08_q1" value="0"> corrisponde all'emivita del farmaco</label>
+                <label><input type="radio" name="l08_q1" value="0"> definisce la Tmax</label>
+            </div>
+
+            <div class="question">
+                <p>02. La clearance plasmatica di un farmaco è espressa in:</p>
+                <label><input type="radio" name="l08_q2" value="0"> mg/min</label>
+                <label><input type="radio" name="l08_q2" value="1"> ml/min</label>
+                <label><input type="radio" name="l08_q2" value="0"> mg/h</label>
+                <label><input type="radio" name="l08_q2" value="0"> ml/h</label>
+            </div>
+
+            <div class="question">
+                <p>03. Il sistema di eliminazione di xenobiotici renale più efficace è rappresentato:</p>
+                <label><input type="radio" name="l08_q3" value="0"> dalla filtrazione renale</label>
+                <label><input type="radio" name="l08_q3" value="0"> dai sistemi di trasporto attivo nel glomerulo</label>
+                <label><input type="radio" name="l08_q3" value="1"> dai trasportatori, per farmaci acidi e per farmaci basici, presenti nei tubuli contorti prossimali.</label>
+                <label><input type="radio" name="l08_q3" value="0"> dal riassorbimento tubulare</label>
+            </div>
+
+            <div class="question">
+                <p>04. Quale tra i seguenti parametri definisce il tempo necessario affinché la massima concentrazione plasmatica del farmaco si riduca della metà?</p>
+                <label><input type="radio" name="l08_q4" value="0"> Tmax</label>
+                <label><input type="radio" name="l08_q4" value="0"> Cmax</label>
+                <label><input type="radio" name="l08_q4" value="0"> AUC</label>
+                <label><input type="radio" name="l08_q4" value="1"> Emivita</label>
+            </div>
+
+            <div class="question">
+                <p>05. L'eliminazione di un farmaco corrisponde:</p>
+                <label><input type="radio" name="l08_q5" value="0"> Alla distribuzione del farmaco nel tessuto adiposo</label>
+                <label><input type="radio" name="l08_q5" value="0"> Esclusivamente al metabolismo del farmaco nel fegato</label>
+                <label><input type="radio" name="l08_q5" value="0"> Alla captazione del farmaco dal sangue al fegato</label>
+                <label><input type="radio" name="l08_q5" value="1"> All'escrezione renale del farmaco immodificato e/o al metabolismo del farmaco nel fegato</label>
+            </div>
+        </div>
+
+        <!-- LEZIONE 010 -->
+        <div class="lesson-section">
+            <h2 class="lesson-title">Lezione 010</h2>
+            
+            <div class="question">
+                <p>01. Quale tra le seguenti indicazioni corrisponde meglio alla definizione di farmacodinamica?</p>
+                <label><input type="radio" name="l10_q1" value="1"> L'interazione tra farmaco e recettore e gli effetti biologici che ne derivano</label>
+                <label><input type="radio" name="l10_q1" value="0"> Nessuna delle precedenti</label>
+                <label><input type="radio" name="l10_q1" value="0"> L'insieme dei meccanismi che regolano lo spostamento del farmaco nell'organismo</label>
+                <label><input type="radio" name="l10_q1" value="0"> La velocità di eliminazione del farmaco dall'organismo</label>
+            </div>
+
+            <div class="question">
+                <p>02. I recettori intracellulari determinano:</p>
+                <label><input type="radio" name="l10_q2" value="0"> Nessuna delle risposte è corretta</label>
+                <label><input type="radio" name="l10_q2" value="0"> Modificazioni dell'attività delle proteine G</label>
+                <label><input type="radio" name="l10_q2" value="1"> Modificazioni nei processi di trascrizione genica</label>
+                <label><input type="radio" name="l10_q2" value="0"> Modificazioni delle correnti ioniche</label>
+            </div>
+
+            <div class="question">
+                <p>03. Quale tra i seguenti è un recettore ionotropico?</p>
+                <label><input type="radio" name="l10_q3" value="1"> Il recettore GABAa</label>
+                <label><input type="radio" name="l10_q3" value="0"> Il recettore 5-HT1A</label>
+                <label><input type="radio" name="l10_q3" value="0"> Il recettore GABAb</label>
+                <label><input type="radio" name="l10_q3" value="0"> Il recettore beta1</label>
+            </div>
+
+            <div class="question">
+                <p>04. Cosa sono i siti allosterici?</p>
+                <label><input type="radio" name="l10_q4" value="0"> Siti presenti sul recettore che ne determinano il posizionamento in membrana</label>
+                <label><input type="radio" name="l10_q4" value="1"> dei siti, presenti sui recettori, a cui si legano modulatori, diversi dal ligando endogeno naturale</label>
+                <label><input type="radio" name="l10_q4" value="0"> siti di modulazione da parte di sostanze inorganiche</label>
+                <label><input type="radio" name="l10_q4" value="0"> nessuna delle affermazioni è corretta</label>
+            </div>
+
+            <div class="question">
+                <p>05. I recettori nucleari:</p>
+                <label><input type="radio" name="l10_q5" value="0"> hanno attività tirosin chinasica</label>
+                <label><input type="radio" name="l10_q5" value="0"> consentono il passaggio di ioni nel nucleo</label>
+                <label><input type="radio" name="l10_q5" value="1"> sono fattori di trascrizione</label>
+                <label><input type="radio" name="l10_q5" value="0"> trasducono il segnale mediante le proteine G</label>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<script>
+    // Script per la correzione automatica domanda per domanda
+    document.addEventListener("change", function(event) {
+        if (event.target && event.target.type === "radio") {
+            const groupName = event.target.name;
+            const radios = document.querySelectorAll(`input[name="${groupName}"]`);
+            
+            radios.forEach(radio => {
+                const label = radio.parentElement;
+                radio.disabled = true; 
+                
+                if (radio.value === "1") {
+                    label.classList.add("correct-answer");
+                } else if (radio.checked && radio.value === "0") {
+                    label.classList.add("wrong-answer");
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
